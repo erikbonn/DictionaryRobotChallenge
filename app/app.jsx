@@ -3,7 +3,6 @@ var ReactDOM = require('react-dom');
 
 var objOne = {
   name: 'Erik',
-  location: 'Salt Lake City'
 };
 
 var objTwo = {
