@@ -1,5 +1,7 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
+var {Route, Router, IndexRoute, hashHistory} = require(;rect-router);
+var Main = require('Main');
 
 var objOne = {
   name: 'Erik',
@@ -14,6 +16,9 @@ console.log(objTwo);
 
 
 ReactDOM.render(
-    <h1>Boilerplate App!</h1>,
+    <Router history={hashHistory}>
+      <Route path="/" component={Main}>
+      </Route>
+    </Router>
     document.getElementById('app')
 );
